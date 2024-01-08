@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MobilityOne-TestSuite">
+
+	<parameter name="browser-name" value="Chrome" />
+	<parameter name="operating-system" value="Windows" />
+	<parameter name="client" value="m1"></parameter>
+	<parameter name="typeoftest" value="Test,Sanity,Regression,Default"></parameter>
+	<!-- Sanity,Regression,Default -->
+	<parameter name="xlFileName" value="MobilityOne.xlsx"></parameter>
+	<listeners>
+		<listener class-name="com.ppi.utilities.ExtentReportManager"></listener>
+	</listeners>
+
+	<!-- <test name="MobilityOne-CreateCard-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.CreateCardTest" />
+		</classes>
+	</test>
+	
+	<test name="MobilityOne-ActivateCard-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.ActivateCardTest" >
+				<methods>
+					<include name="activateCard" />
+					<include name="testActivateCard" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="MobilityOne-ChangeCardStatus-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.ChangeCardStatusTest" />
+		</classes>
+	</test>
+	
+	<test name="MobilityOne-CardInquiry-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.CardInquiryTest" />
+		</classes>
+	</test>
+	 
+	<test name="MobilityOne-UpdateProfile-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.UpdateProfileTest" />
+		</classes>
+	</test>
+	
+	<test name="MobilityOne-RetrieveCustRecord-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.RetrieveCustRecordTest" />
+		</classes>
+	</test>
+	
+	 <test name="MobilityOne-BlockCard-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.BlockCardTest" />
+		</classes>
+	</test> 
+	
+	<test name="MobilityOne-UnblockCard-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.UnblockCardTest" />
+		</classes>
+	</test>
+	
+	<test name="MobilityOne-VerifyCardHolder-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.VerifyCardHolderTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="MobilityOne-Send Otp Mobile-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.SendOtpMobileTest" />
+		</classes>
+	</test> -->
+	
+	<test name="MobilityOne-Verify Otp Mobile-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.mone.VerifyOtpMobileTest" />
+		</classes>
+	</test>
+	
+	<!-- <test name="PrepareExtentReport-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.PrepareExtentReport" />
+		</classes>
+	</test> -->
+	 
+
+</suite> <!-- Suite -->

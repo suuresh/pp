@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SpiceMoney-TestSuite">
+
+	<parameter name="browser-name" value="Chrome" />
+	<parameter name="operating-system" value="Windows" />
+	<parameter name="client" value="spicemoney"></parameter>
+	<parameter name="typeoftest" value="Test,Regression"></parameter>
+	<!-- Sanity,Regression,Default -->
+	<parameter name="xlFileName" value="SpiceMoney.xlsx"></parameter>
+	<listeners>
+		<listener class-name="com.ppi.utilities.ExtentReportManager"></listener>
+	</listeners>
+
+	<test name="SpiceMoney-RegisterCustomer-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.spicemoney.RegisterCustomerTest" />
+		</classes>
+	</test>
+	
+	
+	
+	<!-- <test name="PrepareExtentReport-TestSuite">
+		<classes>
+			<class name="com.ppi.api.testcases.PrepareExtentReport" />
+		</classes>
+	</test> -->
+	 
+
+</suite> <!-- Suite -->
